@@ -5,7 +5,7 @@
  * Description: print all 9_times_table
  */
 
-void 9_times_table(void)
+void times_table(void)
 {
 	int x, y, k;
 
