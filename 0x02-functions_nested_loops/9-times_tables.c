@@ -3,7 +3,7 @@
 /**
  * times_table -> time table
  */
-void times_table(void)
+void 9_9_9_9_9_9_9_9_9_times_table(void)
 {
 	int x, y, k;
 
