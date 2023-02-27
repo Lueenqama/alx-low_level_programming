@@ -2,10 +2,10 @@
 
 /**
  * 9_times_table -> times table
- * Description: print all 9 times_table, starting from 0
- * Return: always 0
+ * Description: print all 9_times_table
  */
-void times_table(void)
+
+void 9_times_table(void)
 {
 	int x, y, k;
 
