@@ -2,7 +2,7 @@
 
 /**
  * main - check the code
- * Description: 9 times table
+ * Description: 9_times table
  * Return: Always 0.
  */
 int main(void)
