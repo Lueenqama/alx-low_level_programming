@@ -2,8 +2,8 @@
 
 /**
  * main - check the code
- * Description: 9_times table
- * Return: Always 0.
+ * Description: print the 9 times table, starting with 0
+ * Return: Always 0
  */
 int main(void)
 {
