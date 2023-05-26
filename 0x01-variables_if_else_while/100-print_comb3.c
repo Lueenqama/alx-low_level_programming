@@ -9,24 +9,25 @@ int main(void)
 	int a;
 	int b;
 
-	for (a = 48; a <= 58; a++)
+	for (a = 0; a <= 9; a++)
 	{
-		for (b = 48; b <= 58; b++)
+		for (b = 0; b <= 9; b++)
 		{
 
-			if ((b % 10) > (a % 10))
+			if (a != b)
 			{
-				putchar((a % 10) + '0');
-				putchar((b % 10) + '0');
+				putchar(a + '0');
+				putchar(b + '0');
 
-				if (a != 56 || b != 57)
+				if (a != 9 || b != 8)
 				{
-
 					putchar(',');
 					putchar(' ');
 				}
 			}
+
 		}
+
 	}
 	putchar('\n');
 	return (0);
