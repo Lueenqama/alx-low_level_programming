@@ -20,10 +20,10 @@ int main(void)
 			putchar((numb2 % 10) + '0');
 
 			if (numb1 != 99 || numb2 != 99)
-			{
-				putchar(',');
-				putchar(' ');
-			}
+				continue;
+			putchar(',');
+			putchar(' ');
+			
 		}
 	}
 
