@@ -9,9 +9,7 @@
 void print_alphabet_x10(void)
 {
 	char ch;
-	int i;
-
-	i = 0;
+	int i = 0; /*Initialize the variable i*/
 
 	while (i < 10)
 	{
@@ -24,5 +22,7 @@ void print_alphabet_x10(void)
 		}
 
 		_putchar('\n');
+
+		i++; /*Increment i escape the loop*/
 	}
 }
