@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 
 /**
  * main - Entry point
@@ -12,7 +12,7 @@ int main(void)
 	int a;
 
 	a = 0;
-	positive_or_negative(i);
+	positive_or_negative(a);
 
 	return (0);
 }
