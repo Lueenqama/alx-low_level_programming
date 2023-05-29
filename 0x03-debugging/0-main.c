@@ -1,32 +1,18 @@
-#include <stdliib.h>
-#include <time.h>
-#include <stdio.h>
+#include <main.h>
 
 /**
  * main - Entry point
  *
- * Description: 'Check for number if it is positive or negative'
+ * Description: Test function for negative or positive
  *
  * Return: always 0
  */
 int main(void)
 {
-	int n;
+	int a;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
+	a = 0;
+	positive_or_negative(i);
 
-	if (n > 0)
-	{
-		printf("%d is positive\n", n);
-	}
-	else if (n == 0)
-	{
-		printf("%d is zero\n", n);
-	}
-	else
-	{
-		printf("%d is negative\n", n);
-	}
 	return (0);
 }
