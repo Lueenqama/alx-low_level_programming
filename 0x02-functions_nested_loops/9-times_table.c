@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * 9_times_table - print 9 times table
- * Description: print all 9 times table
+ * times_table - print times table
+ *
+ * Description: print all times table
  */
 
 void times_table(void)
@@ -26,7 +27,7 @@ void times_table(void)
 			else if (z >= 10)
 			{
 				_putchar(',');
-				_putchar(' ');			
+				_putchar(' ');
 				_putchar((z / 10) + '0');
 				_putchar((z % 10) + '0');
 			}
