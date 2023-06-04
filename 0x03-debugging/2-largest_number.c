@@ -10,28 +10,23 @@
 
 int largest_number(int a, int b, int c)
 {
-	int largest;
+	int largest = a;
 
-	if (a >= b && a >= c)
-	{
-		largest = a;
-	}
-	else if (b >= a && b >= c)
+	if (b > largest)
 	{
 		largest = b;
 	}
-	else
+	if (c > largest)
 	{
 		largest = c;
 	}
-
+	
 	return (largest);
 }
 
 int main(void)
 {
-	int numb1, numb2, numb3;
-	int largest;
+	int numb1, numb2, numb3, largest;
 
 	printf("Enter three integers: ");
 	scanf("%d %d %d", &numb1, &numb2, &numb3);
