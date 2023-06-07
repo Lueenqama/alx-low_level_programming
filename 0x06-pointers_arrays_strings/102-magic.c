@@ -13,14 +13,13 @@ int main(void)
 	int a[5];
 	int *p;
 
-	a[2] = 98;
-	p = malloc(sizeof(int));  /* Allocate memory for n */
+	a[2] = 1024;
+	p = &n;
 
-	*(p + 5) = 98;  /* Assign value to *(p + 5) */
+	*(p + 5) = a{2};  /* Assign value to *(p + 5) */
 
-	printf("a[2] = %d\n", a[2]);
+	printf("a[2] = %d\n", *(p + 5));
 
-	free(p);  /* Free the allocated memory */
 	return (0);
 }
 
