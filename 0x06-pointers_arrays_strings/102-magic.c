@@ -16,7 +16,7 @@ int main(void)
 	a[2] = 1024;
 	p = &n;
 
-	*(int *)((char *)p + 20) = 98;
+	*(p + 20) = 98;
 
 	printf("a[2] = %d\n", *(p + 5));
 
