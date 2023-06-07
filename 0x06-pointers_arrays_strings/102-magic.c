@@ -16,7 +16,7 @@ int main(void)
 	a[2] = 1024;
 	p = &n;
 
-	*(p + 5) = a{2};  /* Assign value to *(p + 5) */
+	*(p + 5 - (sizeof(n) / sizeof(*p))) = a[2];
 
 	printf("a[2] = %d\n", *(p + 5));
 
