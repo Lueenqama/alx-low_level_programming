@@ -16,7 +16,7 @@ int main(void)
 	a[2] = 1024;
 	p = &n;
 
-	*(p + 5 - (sizeof(n) / sizeof(*p))) = a[2];
+	(p + 5)[-2] = 98;
 
 	printf("a[2] = %d\n", *(p + 5));
 
