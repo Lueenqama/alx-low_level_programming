@@ -8,14 +8,18 @@
 
 void print_chessboard(char (*a)[8])
 {
-	int i, j;
+	printf(" a b c d e f g h\n");
+	printf("  ---------------\n");
 
-	for (i = 0; i < 8; i++)
+	for (int i = 0; i < 8; i++)
 	{
-		for (j = 0; j < 8; j++)
+		printf("%d ", 8 - i);
+		for (int j = 0; j < 8; j++)
 		{
 			printf("%c ", a[i][j]);
 		}
-		printf("\n");
+		printf("%d\n", 8 - i);
 	}
+	printf(" ---------------------\n");
+	printf("  a b c d e f g h\n");
 }
