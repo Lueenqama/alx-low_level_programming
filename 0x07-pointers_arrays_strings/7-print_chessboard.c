@@ -20,3 +20,18 @@ void print_chessboard(char (*a)[8]);
 	}
 }
 
+/**
+ * main - check the code
+ *
+ * Return: 0
+ */
+int main(void)
+{
+	char *chessboard = malloc(sizeof(char) * 8 * 8);
+
+	print_chessboard(chessboard);
+
+	free(chessboard);
+
+	return (0);
+}
