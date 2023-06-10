@@ -9,16 +9,5 @@
  */
 void set_string(char **s, char *to)
 {
-	size_t len = strlen(to);
-	char *temp = (char *)malloc((len + 1) * sizeof(char));
-
-	if (temp == NULL)
-	{
-		return;
-	}
-
-	strcpy(temp, to);
-
-	free(*s);
-	*s = temp;
+	*s = to;
 }
