@@ -2,7 +2,8 @@
 
 /**
  * print_diagsums - the sum of two diagonals of a square matrix of integers
- *
+ * @a: pointer
+ * @size: sizeof data type
  * Return: 0
  */
 
