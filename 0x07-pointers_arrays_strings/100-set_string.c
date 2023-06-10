@@ -1,23 +1,24 @@
-#include <stdio.h>
-
+#include <stdlib.h>
+#include <string.h>
+#include "main.h"
 /**
- * set_string - sets the value of a pointer to a char
- *
+ * set_string - print function that sets the value ofa pointer to a char
+ * @s: sets value of pointer to char
+ * @to: pointer
  * Return: 0
  */
-
 void set_string(char **s, char *to)
 {
-	*s = to;
-}
-int main(void)
-{
-	char *str = "Hello, World!";
-	char *ptr = NULL;
+	size_t len = strlen(to);
+	char *temp = (char *)malloc((len + 1) * sizeof(char));
 
-	set_string(&ptr, str);
+	if (temp == NULL)
+	{
+		return;
+	}
 
-	printf("ptr: %s\n", ptr);
+	strcpy(temp, to);
 
-	return (0);
+	free(*s);
+	*s = temp;
 }
