@@ -3,6 +3,7 @@
 /**
  * _pow_recursion - this function returns t
  * the value of x raised to the power of y
+ * @x: parameter
  * @y: exponent
  *
  *Return: -1 or 1
