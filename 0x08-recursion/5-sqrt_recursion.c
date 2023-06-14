@@ -3,63 +3,38 @@
 /**
  * _sqrt_recursion - the function returns
  * the natural square root of a number
- * _sqrt_recursion_helper: Helper function for calculating
- * the square root recursively.
- * @n: parameter
  * @start: begining of range
- * @end: end of range
- * Return: -1 or 1
+ * @end: equal to n
+ * @n: parameter
+ * Return: result
  */
-
-int _sqrt_recursion_helper(int n, int start, int end)
-
-int _sqrt_recursion(int n);
-
-int main(void)
-{
-	int number = 25;
-	int result = _sqrt_recursion(number;
-
-	printf("%d\n", number, result);
-	return (0);
-}
-
 int _sqrt_recursion(int n)
 {
-	if (n < 0)
-	{
-		return (-1); /*indicates error for - numbers */
-	}
-	else if (n == 0 || n == 1)
-	{
-	return (n);
-	}
-	else
-	{
-	return (_sqrt_recursion_helper(n, 0, n));
-	}
-}
+	int result;
+	int start = 1;
+	int end = n;
 
-int _sqrt_recursion_helper(int n, int start, int end)
-{
-	if (start > end)
+	if (n == 0 || n == 1)
 	{
-		return (-1);
+		return (n);
 	}
 
-	int mid = (start + end) / 2;
-	int square = mid * mid;
+	while (start <= end)
+	{
+		int mid = (start + end) / 2;
 
-	if (square == n)
-	{
-		return (mid);
+		if (mid * mid == n)
+		{
+			return (mid);
+		}
+
+		if (mid * mid < n)
+		{
+			start = mid + 1;
+			result = mid;
+		} else
+			end = mid - 1;
 	}
-	else if (square > n)
-	{
-	return (_sqrt_recursion_helper(n, start, mid - 1));
-	}
-	else
-	{
-		return (_sqrt_recursion_helper(n, mid + 1, end));
-	}
+
+	return (result);
 }
