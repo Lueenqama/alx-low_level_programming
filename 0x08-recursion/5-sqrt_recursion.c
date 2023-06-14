@@ -3,15 +3,14 @@
 /**
  * _sqrt_recursion - the function returns
  * the natural square root of a number
- *
- * sqrt_helper: this is a helper function
+ * sqrt_helper: recursive function serves as a helper to
+ * calculate the sqaure root of a number
  * @start: begining of range
  * @end: equal to n
  * @n: parameter
- *
- * main - demonstrates usage of _sqrt_recursion function
- * Return: result
+ * Returns: square root of the given number or -1.
  */
+
 int sqrt_helper(int n, int start, int end)
 {
 	int mid;
@@ -19,7 +18,7 @@ int sqrt_helper(int n, int start, int end)
 
 	if (start > end)
 	{
-		return (end);
+		return (-1);
 	}
 
 	mid = start + (end - start) / 2;
