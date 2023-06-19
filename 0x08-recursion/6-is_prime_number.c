@@ -7,22 +7,28 @@
  * @n: parameter
  * Return: 1 or 0
 */
-int is_prime_number(int n)
+int is_prime_recursive(int n, int i)
 {
-	int i = 2;
 
 	if (n <= 1)
 	{
 		return (0);
-	};
-
-	for (; i * i <= n; i++)
-	{
-		if (n % i == 0)
-		{
-			return (0);
-		}
 	}
 
-	return (1);
+	if (i <= 1)
+	{
+		return (1);
+	}
+	
+	if (n % i == 0)
+	{
+		return (0);
+	}
+
+	return (is_prime_recursive(n, i - 1));
+}
+
+int is_prime_number(int n)
+{
+	return (is_prime_recursive(n, n / 2));
 }
