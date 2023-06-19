@@ -4,7 +4,10 @@
 /**
  * is_prime_number - this function returns 1 if the input
  * is a prime number, otherwise 0
+ * is_prime_recursive: this function is a recursive helper
  * @n: parameter
+ * @i: parameter
+ *
  * Return: 1 or 0
 */
 int is_prime_recursive(int n, int i)
@@ -19,7 +22,7 @@ int is_prime_recursive(int n, int i)
 	{
 		return (1);
 	}
-	
+
 	if (n % i == 0)
 	{
 		return (0);
